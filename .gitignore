@@ -10,3 +10,6 @@ vrchat/Temp/
 vrchat/Obj/
 vrchat/Logs/
 vrchat/ProjectSettings/
+serafina/node_modules/
+serafina/dist/
+serafina/.env
