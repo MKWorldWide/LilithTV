@@ -1,0 +1,12 @@
+{
+  "wake_word": "Lilith",
+  "theme": "voidglass",
+  "overlays": ["weather", "music", "discord"],
+  "default_channel": "https://www.youtube.com/c/GameDin/live",
+  "chat_stream_url": "ws://localhost:8080",
+  "plugins": [
+    { "name": "weather", "module": "/src/widgets/WeatherWidget.jsx" },
+    { "name": "nowPlaying", "module": "/src/widgets/NowPlayingWidget.jsx" },
+    { "name": "discord", "module": "/src/widgets/DiscordFeedWidget.jsx" }
+  ]
+}

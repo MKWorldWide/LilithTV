@@ -1,0 +1,14 @@
+# Raspberry Pi build (ARM)
+FROM --platform=linux/arm/v7 node:18-bullseye AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM --platform=linux/arm/v7 node:18-bullseye
+WORKDIR /app
+COPY --from=build /app/dist ./dist
+RUN npm install -g serve
+EXPOSE 4173
+CMD ["serve", "-s", "dist"]

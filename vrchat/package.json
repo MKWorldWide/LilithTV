@@ -1,0 +1,11 @@
+{
+  "name": "com.lilithtv.client",
+  "displayName": "LilithTV VRChat Companion",
+  "version": "0.1.0",
+  "description": "LilithTV integration package for VRChat Creator Companion and SDK.",
+  "unity": "2022.3",
+  "vpmDependencies": {
+    "com.vrchat.worlds": "^3.4.0",
+    "com.vrchat.udonsharp": "^1.1.0"
+  }
+}

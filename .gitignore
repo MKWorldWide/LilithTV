@@ -1,0 +1,12 @@
+node_modules/
+.env
+.DS_Store
+*.log
+dist/
+coverage/
+# Unity / VRChat project artifacts
+vrchat/Library/
+vrchat/Temp/
+vrchat/Obj/
+vrchat/Logs/
+vrchat/ProjectSettings/
